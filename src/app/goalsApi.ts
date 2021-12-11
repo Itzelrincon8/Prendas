@@ -1,4 +1,4 @@
 export class GoalsApi {
-    nombre: string;
-    album: string;
+    modelo: string;
+    marca: string;
   }

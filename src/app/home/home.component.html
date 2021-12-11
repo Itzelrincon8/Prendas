@@ -2,13 +2,13 @@
   
   <div class = "col">
    
-    <p>Agrega una cancion de ghost</p>
+    <p>Agrega una modelo </p>
   
   </div>
  
   <div class = "col">
   
-    <p>Lista de canciones ({{  itemCount }})</p>
+    <p>Lista de Tenis </p>
   
   </div>
 
@@ -16,11 +16,14 @@
 <div class ="container color-ligth" [@goals]="goals.length ">
   
     <div class = "col">
-     
-      <p class="sm">Agrega el nombre de una cancion .</p>
-      <form>
-        <input type="text" class="txt" name="item" placeholder="Life goal..." [(ngModel)]= "goalText">
+      <br>
+      <br>
+
+      <a>Agrega un modelo</a>
+      <form >
         
+        <input  type="text" class="txt" name="item" placeholder="Life goal..." [(ngModel)]= "goalText">
+      
         
         <input type="submit" class ="btn" value="{{ btntxt }}" (click)="AgregarMeta()">
       </form>
@@ -29,7 +32,7 @@
     <div class = "col">
      <p class="life-container" *ngFor="let goal of goals; let i = index" (click)="removeItem(i)">
 
-        {{goal.nombre}} - {{goal.album}}
+        {{goal.modelo}} - {{goal.marca}}
       </p>
     
     </div>
