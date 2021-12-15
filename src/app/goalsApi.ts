@@ -1,4 +1,4 @@
 export class GoalsApi {
-    modelo: string;
+    nombre: string;
     marca: string;
   }

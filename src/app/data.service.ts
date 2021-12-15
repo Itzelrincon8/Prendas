@@ -9,7 +9,7 @@ import { BehaviorSubject } from 'rxjs/';
 })
 export class DataService {
 
-  private goals = new BehaviorSubject<any>(['modelos', 'marcas']);
+  private goals = new BehaviorSubject<any>(['nombres', 'marcas']);
   goal=  this.goals.asObservable();
 
   constructor(private http: HttpClient) { }
@@ -18,8 +18,8 @@ export class DataService {
     this.goals.next(goal)
   }
 
-  //apiURL = 'http://localhost:8113;
-  apiURL = 'http://34.125.7.41:8113/zapatos-api';
+  //apiURL = 'http://localhost:8125;
+  apiURL = 'http://34.125.7.41:8125/prendas-api';
 
   // Http Options
   httpOptions = {
@@ -35,7 +35,7 @@ export class DataService {
 
 
   getGoals(): Observable<GoalsApi> {
-    return this.http.get<GoalsApi>(this.apiURL + '/zapatos', this.httpOptions)
+    return this.http.get<GoalsApi>(this.apiURL + '/prendas', this.httpOptions)
     .pipe(
       retry(1),
       catchError(this.handleError)
@@ -43,7 +43,7 @@ export class DataService {
   }   
 
   newGoal(payload): Observable<GoalsApi> {
-    return this.http.post<GoalsApi>(this.apiURL + '/zapatos', JSON.stringify(payload), this.httpOptions)
+    return this.http.post<GoalsApi>(this.apiURL + '/prendas', JSON.stringify(payload), this.httpOptions)
     .pipe(
       retry(1),
       catchError(this.handleError)

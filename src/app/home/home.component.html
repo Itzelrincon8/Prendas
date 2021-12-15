@@ -2,13 +2,13 @@
   
   <div class = "col">
    
-    <p>Agrega una modelo </p>
+    <p>Agrega una prenda </p>
   
   </div>
  
   <div class = "col">
   
-    <p>Lista de Tenis </p>
+    <p>Lista de Prendas </p>
   
   </div>
 
@@ -19,10 +19,10 @@
       <br>
       <br>
 
-      <a>Agrega un modelo</a>
+      <a>Agrega una marca</a>
       <form >
         
-        <input  type="text" class="txt" name="item" placeholder="Life goal..." [(ngModel)]= "goalText">
+        <input  type="text" class="txt" name="item" placeholder="Nombre - Marca" [(ngModel)]= "goalText">
       
         
         <input type="submit" class ="btn" value="{{ btntxt }}" (click)="AgregarMeta()">
@@ -32,7 +32,7 @@
     <div class = "col">
      <p class="life-container" *ngFor="let goal of goals; let i = index" (click)="removeItem(i)">
 
-        {{goal.modelo}} - {{goal.marca}}
+        {{goal.nombre}} - {{goal.marca}}
       </p>
     
     </div>

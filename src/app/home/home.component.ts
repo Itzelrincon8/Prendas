@@ -34,8 +34,8 @@ import { DataService } from '../data.service';
 export class HomeComponent implements OnInit {
   
   itemCount: number;
-  btntxt: string ="Agregar Zapato";
-  goalText: string ="Modelo"; 
+  btntxt: string ="Agregar prenda";
+  goalText: string ="Nombre"; 
   goals=[];
   constructor(private _data: DataService) { }
 
@@ -46,9 +46,9 @@ export class HomeComponent implements OnInit {
 
     this._data.getGoals()
      .subscribe((data: any) => {
-      alert(JSON.stringify(data.zapatos)); //cambiado 49-51
+      alert(JSON.stringify(data.prendas)); //cambiado 49-51
 
-      this.goals = data.zapatos;
+      this.goals = data.prendas;
       this._data.changeGoal(this.goals);
 
     });
@@ -59,7 +59,7 @@ export class HomeComponent implements OnInit {
 
     var payload = {
       modelo : this.goalText,
-      marca : "Nike"
+      marca : "Shein"
     }
 
     this._data.newGoal(payload)
