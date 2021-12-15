@@ -12,7 +12,7 @@ var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../node_modules/css-lo
 exports = ___CSS_LOADER_API_IMPORT___(true);
 exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Raleway:300,700);"]);
 // Module
-exports.push([module.i, "body {\n  background: #fffefe;\n  padding: 3em;\n  font-family: \"Raleway\", \"Arial\";\n  color: #fff;\n  font-size: 150%;\n}\nul {\n  list-style-type: none;\n  margin: 0 0 2em 0;\n  padding: 0;\n}\nul li {\n  display: inline;\n  margin-right: 30px;\n}\nul li a {\n  font-size: 1.5em;\n  color: black;\n}\na {\n  color: #030303;\n  text-decoration: none;\n}\np1 {\n  color: #000;\n}", "",{"version":3,"sources":["styles.scss"],"names":[],"mappings":"AAEA;EACI,mBAAA;EACA,YAAA;EACA,+BAAA;EACA,WAAA;EACA,eAAA;AAAJ;AAEA;EACI,qBAAA;EACA,iBAAA;EACA,UAAA;AACJ;AACA;EACI,eAAA;EACA,kBAAA;AAEJ;AAAA;EACI,gBAAA;EACA,YAAA;AAGJ;AADA;EACI,cAAA;EACA,qBAAA;AAIJ;AAFA;EACI,WAAA;AAKJ","file":"styles.scss","sourcesContent":["@import url('https://fonts.googleapis.com/css?family=Raleway:300,700');\n\nbody {\n    background:#fffefe;\n    padding: 3em;\n    font-family: 'Raleway', 'Arial';\n    color:#fff;\n    font-size: 150%;\n}\nul{\n    list-style-type:none;\n    margin: 0 0 2em 0;\n    padding:0;\n}\nul li {\n    display:inline;\n    margin-right: 30px;\n}\nul li a {\n    font-size: 1.5em;\n    color: black;\n}\na {\n    color:rgb(3, 3, 3);\n    text-decoration:none;\n}\np1{\n    color: #000;;\n}"]}]);
+exports.push([module.i, "body {\n  background: #E9967A;\n  padding: 3em;\n  font-family: \"Raleway\", \"Arial\";\n  color: #F08080;\n  font-size: 150%;\n}\nul {\n  list-style-type: none;\n  margin: 0 0 2em 0;\n  padding: 0;\n}\nul li {\n  display: inline;\n  margin-right: 30px;\n}\nul li a {\n  font-size: 1.5em;\n  color: black;\n}\na {\n  color: #DC143C;\n  text-decoration: none;\n}\np1 {\n  color: #CD5C5C;\n}", "",{"version":3,"sources":["styles.scss"],"names":[],"mappings":"AAEA;EACI,mBAAA;EACA,YAAA;EACA,+BAAA;EACA,cAAA;EACA,eAAA;AAAJ;AAEA;EACI,qBAAA;EACA,iBAAA;EACA,UAAA;AACJ;AACA;EACI,eAAA;EACA,kBAAA;AAEJ;AAAA;EACI,gBAAA;EACA,YAAA;AAGJ;AADA;EACI,cAAA;EACA,qBAAA;AAIJ;AAFA;EACI,cAAA;AAKJ","file":"styles.scss","sourcesContent":["@import url('https://fonts.googleapis.com/css?family=Raleway:300,700');\n\nbody {\n    background:\t#E9967A;\n    padding: 3em;\n    font-family: 'Raleway', 'Arial';\n    color:\t#F08080;\n    font-size: 150%;\n}\nul{\n    list-style-type:none;\n    margin: 0 0 2em 0;\n    padding:0;\n}\nul li {\n    display:inline;\n    margin-right: 30px;\n}\nul li a {\n    font-size: 1.5em;\n    color: black;\n}\na {\n    color:\t#DC143C;\n    text-decoration:none;\n}\np1{\n    color: \t#CD5C5C;\n}"]}]);
 // Exports
 module.exports = exports;
 
@@ -440,7 +440,7 @@ module.exports = content.locals || {};
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /home/itzelrincon/Escritorio/PrendasUI/src/styles.scss */"./src/styles.scss");
+module.exports = __webpack_require__(/*! /home/itzelrincon/Escritorio/Prendas/src/styles.scss */"./src/styles.scss");
 
 
 /***/ })
